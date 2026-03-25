@@ -7,4 +7,4 @@ import { Component } from '@angular/core';
     standalone: true,
 })
 
-export class HeaderComponent {}
+export class HeaderComponent {} 
