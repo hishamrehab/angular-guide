@@ -1,10 +1,6 @@
 import { Component , EventEmitter, Input , Output}  from '@angular/core';
+import { type UserType } from './user.model';
 
- type UserType = {
-  id: string, 
-  avatar: string,
-  name: string
- }
 
 //  interface UserType {
 //   id: string, 
