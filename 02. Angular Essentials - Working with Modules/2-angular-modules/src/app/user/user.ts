@@ -1,7 +1,5 @@
 import { Component , EventEmitter, Input , Output}  from '@angular/core';
 import { type UserType } from './user.model';
-import { Card } from "../shared/card/card";
-
 
 //  interface UserType {
 //   id: string, 
@@ -11,7 +9,6 @@ import { Card } from "../shared/card/card";
 
    @Component({
     selector: 'app-user',
-    imports: [Card],
     templateUrl: './user.html',
     styleUrl: './user.css',
   })
