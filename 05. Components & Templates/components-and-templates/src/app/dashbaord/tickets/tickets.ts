@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-
+import { NewTicket } from '../../dashboard/tickets/new-ticket/new-ticket';
 @Component({
   selector: 'app-tickets',
-  imports: [],
+  imports: [NewTicket],
   templateUrl: './tickets.html',
   styleUrl: './tickets.css',
 })
