@@ -5,6 +5,10 @@ import { Component  ,Input , input} from '@angular/core';
   imports: [],
   templateUrl: './dashboard-item.html',
   styleUrl: './dashboard-item.css',
+  encapsulation: ViewEncapsulation.None,
+  // host: {
+  //   class: 'dashboard-item'
+  // },
 })
 
 export class DashboardItem { 
