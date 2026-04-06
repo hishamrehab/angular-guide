@@ -1,4 +1,4 @@
-import { Component, ViewChild  , ElementRef } from '@angular/core';
+import { Component, viewChild  } from '@angular/core';
 import { Button } from '../../../shared/button/button';
 import { FormsModule } from '@angular/forms';
 
@@ -11,12 +11,14 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class NewTicket {
-  @ViewChild('form') form?: ElementRef<HTMLFormElement>; 
+    //  @ViewChild('form') private form?: ElementRef<HTMLFormElement>; 
+   private form = viewChild.required<HTMLFormElement>('form');
 
   onSubmit(title: string, ticketText : string ) {
     console.log(title);
-    console.log(ticketText);
-    this.form?.nativeElement.reset();
+    console.log(ticketText); 
+  
+    this.form()?.nativeElement.reset();
   }
 }
 
